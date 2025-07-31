@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 elenco = {
     'atletas': [
-        {'foto': 'images/rossi.png', 'nome': 'augustin rossi', 'idade': 29, 'posicao': 'goleiro', 'nascimento': 'argentina'},
+        {'foto': 'images/ferrerinha.jpg', 'nome': 'Ferreirinha', 'idade': 29, 'posicao': 'Atacante', 'nascimento': 'argentina'},
         {'foto': 'images/leo ortiz.jpg', 'nome': 'léo ortiz', 'idade': 29, 'posicao': 'zagueiro', 'nascimento': 'brasil'},
         {'foto': 'images/leo pereira.jpg', 'nome': 'léo pereira', 'idade': 29, 'posicao': 'zagueiro', 'nascimento': 'brasil'},
         {'foto': 'images/alex sandro.png', 'nome': 'alex sandro', 'idade': 34, 'posicao': 'lateral esquerdo', 'nascimento': 'brasil'},
@@ -19,7 +19,7 @@ elenco = {
 info_site = {
     'titulo': 'clubes de regatas do flamengo',
     'historia': 'o flamengo foi fundado em 17 de novembro de 1895 para as disputas de remo. A entrada da equipe de futebol só aconteceu em 1912.',
-    'autores': ['Luiz Felipe', 'Carlos Eduardo']
+    'autores': ['João Victor e Elias Renner']
 }
 
 def inicio(request):
