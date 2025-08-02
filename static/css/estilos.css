@@ -55,7 +55,8 @@ nav a:hover {
     width: 220px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .card-atleta h3 {
@@ -77,8 +78,42 @@ nav a:hover {
 .card-atleta:hover {
     transform: scale(1.05);
     background-color: #fff8f8;
-    border-color: #111111;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid transparent;
+    background-image: 
+        linear-gradient(white, white),
+        linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: rainbow-border 2s linear infinite;
+}
+
+@keyframes rainbow-border {
+    0% {
+        background-image: 
+            linear-gradient(white, white),
+            linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+    }
+    25% {
+        background-image: 
+            linear-gradient(white, white),
+            linear-gradient(45deg, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000, #ff8000);
+    }
+    50% {
+        background-image: 
+            linear-gradient(white, white),
+            linear-gradient(45deg, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000, #ff8000, #ffff00);
+    }
+    75% {
+        background-image: 
+            linear-gradient(white, white),
+            linear-gradient(45deg, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000, #ff8000, #ffff00, #80ff00);
+    }
+    100% {
+        background-image: 
+            linear-gradient(white, white),
+            linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+    }
 }
 
 .secao-info {
